@@ -35,10 +35,11 @@ PRODUCT_SYSTEM_NAME := gts3lwifi
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
+# https://review.lineageos.org/c/LineageOS/android_build_soong/+/401215
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=gts3lwifi \
-    PRIVATE_BUILD_DESC="gts3lwifixx-user 9 PPR1.180610.011 T820XXU3CTD5 release-keys"
+    DeviceProduct=gts3lwifi \
+    BuildDesc="gts3lwifixx-user 9 PPR1.180610.011 T820XXU3CTD5 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "samsung/gts3lwifixx/gts3lwifi:9/PPR1.180610.011/T820XXU3CTD5:user/release-keys"
